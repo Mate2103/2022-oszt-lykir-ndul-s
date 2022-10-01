@@ -1,30 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
-    background: rgb(102,102,102);
-    background: linear-gradient(330deg, rgba(102,102,102,1) 0%, rgba(148,148,148,1) 53%, rgba(102,102,102,1) 100%);
+
+html {
+    background: rgb(46, 71, 117);
+    background: linear-gradient(128deg, rgba(46, 71, 117, 1) 0%, rgba(75, 118, 196, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
-.main-title{
+
+.main-title {
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
+    font-size: 3em;
 }
-header{
+
+header {
     height: 20vh;
 }
-main{
+
+main {
     height: 60vh;
 }
-footer{
+
+footer {
     height: 20vh;
 }
-.grid-container{
+
+.grid-container {
     display: flex;
     gap: 25px;
     justify-content: center;
@@ -32,9 +40,10 @@ footer{
     height: 100%;
     width: 100vw;
     flex-wrap: wrap;
-    
-} 
-.grid-item{
+
+}
+
+.grid-item {
     text-decoration: none;
     color: white;
     font-size: 2em;
@@ -50,26 +59,33 @@ footer{
     transition: all 0.2s ease-out;
     background-position: center;
 }
-.grid-item:hover{
+
+.grid-item:hover {
 
     transform: scale(1.1);
-} 
+}
+
 .grid-container:hover .grid-item:not(:hover) {
     filter: grayscale(100%) blur(2px);
 }
+
 .grid-item::after {
     background-color: rgba(#000, 0.5);
 }
-.nap1{
+
+.nap1 {
     background-image: url("./img/nap1.jpg");
 }
-.nap2{
+
+.nap2 {
     background-image: url("./img/nap2.jpg");
 }
-.nap3{
+
+.nap3 {
     background-image: url("./img/nap3.jpg");
 }
-.footer-text{
+
+.footer-text {
     text-align: center;
     color: white;
     width: 100%;
