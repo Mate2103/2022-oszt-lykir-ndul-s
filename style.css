@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,41 +29,127 @@
     color: black;
     font-size: 1.5em;
 }
-.selected-grid-item{
+
+/* .selected-grid-item {
     border-bottom: 5px black solid;
+} */
+.nav-grid-item:after{
+    display: block;
 }
-.nav{
+.nav-grid-item:hover:after{
+    display: block;
+}
+
+.nav {
     height: auto;
     background-color: #888;
 }
-.main{
+
+.main {
     height: fit-content;
 }
-.main>article{
+
+.main>article {
     height: 100vh;
 }
+
 .break {
     flex-basis: 100%;
     height: 0;
 }
-.helyszin-1{
-    background-color: rebeccapurple;
+
+.helyszin-1 {
+    background-color: rgb(204, 204, 204);
 }
-.article-title{
+
+.article-title {
     padding: 50px;
     font-size: 2em;
     color: white;
-
+    text-shadow: 1px 2px 5px #555;
 }
-.article-text{
+
+.article-text {
     font-size: 1.3em;
     padding-left: 5vw;
+    padding-right: 3vw;
     text-align: justify;
+    color: white;
+    text-shadow: 1px 1px 10px #555;
 }
-.helyszin-2{
-    background-color: red;
+
+.main>article {
+    display: flex;
+    flex-wrap: wrap;
 }
-.article-image{
+
+.article-container {
+    height: 50%;
+    width: 50%;
+}
+
+.helyszin-2 {
+    background-color: #999;
+}
+
+.article-image {
     float: right;
     margin-left: 3vw;
+}
+
+#image1-1 {
+    height: 90%;
+    width: 90%;
+    padding-top: 2%;
+    padding-right: 3%;
+    filter: drop-shadow(-7px 8px 5px #333);
+    float: right;
+}
+
+#image1-2 {
+    height: 95%;
+    width: 95%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    filter: drop-shadow(7px 8px 5px #333);
+    float: left;
+}
+
+#div1-2 {
+    display: flex;
+    align-items: center;
+}
+
+.brighter-shadow {
+    text-shadow: 1px 1px 10px #333;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+.footer{
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 2vw;
+    display: flex;
+}
+.footer>p{
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 5px #555;
+    padding-top: 0.5vh;
+}
+.footer>p>a{
+    color: #666;
+    text-shadow: none;
 }
