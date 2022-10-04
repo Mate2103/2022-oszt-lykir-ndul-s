@@ -115,6 +115,8 @@ footer {
     .grid-item {
         margin-left: 10%;
         margin-right: 10%;
+        width: 80vw;
+        line-height: calc(80vw / 16 * 10);
     }
 
     main {
