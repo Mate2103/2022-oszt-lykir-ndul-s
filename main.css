@@ -4,20 +4,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html {
-    background: rgb(46, 71, 117);
-    background: linear-gradient(128deg, rgba(46, 71, 117, 1) 0%, rgba(75, 118, 196, 1) 100%);
+body {
+    background: rgb(35, 49, 66);
+    background: linear-gradient(0deg, rgba(35, 49, 66, 1) 0%, rgba(69, 93, 122, 1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .main-title {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     text-align: center;
     padding-top: 10vh;
     padding-bottom: 5vh;
     font-size: 3em;
+    text-shadow: 1px 1px 5px #444;
 }
 
 header {
@@ -45,32 +46,28 @@ footer {
 
 .grid-item {
     text-decoration: none;
-    color: white;
     font-size: 2em;
     font-weight: bold;
+    color: white;
     width: 400px;
     line-height: calc(400px / 16 * 10);
     text-align: center;
     background-color: #333;
     background-size: cover;
     background-repeat: no-repeat;
-    text-shadow: 1px 1px rgba(50, 50, 50, 0.8);
+    background-position: center;
+    text-shadow: 2px 2px 3px rgba(50, 50, 50, 0.8);
     border-radius: 5px;
     transition: all 0.2s ease-out;
-    background-position: center;
+    box-shadow: 0 0 15px #333;
 }
 
 .grid-item:hover {
-
     transform: scale(1.1);
 }
 
 .grid-container:hover .grid-item:not(:hover) {
     filter: grayscale(100%) blur(2px);
-}
-
-.grid-item::after {
-    background-color: rgba(#000, 0.5);
 }
 
 .nap1 {
@@ -85,9 +82,59 @@ footer {
     background-image: url("./img/nap3.jpg");
 }
 
-.footer-text {
+.footer>p {
     text-align: center;
     color: white;
     width: 100%;
     padding-top: 15vh;
+}
+
+.footer>p>a {
+    color: #f95959;
+    text-shadow: none;
+}
+
+@media (min-width: 320px) and (max-width: 999px) {
+
+    /*  Mobile and tablet CSS */
+    header {
+        height: auto;
+    }
+
+    .main-title {
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        font-size: 2.5em;
+    }
+
+    .grid-container {
+        height: fit-content;
+    }
+
+    .grid-item {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .footer {
+        height: fit-content;
+    }
+
+    .footer>p {
+        padding-top: 0;
+        margin-top: 5vh;
+    }
+
+    .grid-item:hover {
+        transform: none;
+    }
+
+    .grid-container:hover .grid-item:not(:hover) {
+        filter: none;
+    }
 }
