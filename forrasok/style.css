@@ -1,0 +1,27 @@
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+}
+.main{
+    height: 90%;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+    padding-top: 20vh;
+    grid-template-rows: 5vh 5vh 5vh;
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+}
+.grid-item>a{
+    text-decoration: none;
+    color: #f95959;
+    text-shadow: 1px 1px 5px #6f2727;
+}
+@media (min-width: 320px) and (max-width: 999px){
+    .grid-container{
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+}
