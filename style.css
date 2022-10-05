@@ -113,25 +113,27 @@
     margin-left: 3vw;
 }
 
-#image1-1 {
+.image1-1 {
     height: 90%;
     width: 90%;
     padding-top: 2vh;
     padding-right: 1vw;
     filter: drop-shadow(-2px 2px 4px #222);
     float: right;
+    object-fit: contain;
 }
 
-#image1-2 {
+.image1-2 {
     height: 90%;
     width: 90%;
     padding-bottom: 2vh;
     padding-left: 1vw;
     filter: drop-shadow(2px 2px 4px #222);
     float: left;
+    object-fit: contain;
 }
 
-#div1-2 {
+.div1-2 {
     display: flex;
     align-items: center;
 }

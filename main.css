@@ -71,15 +71,15 @@ footer {
 }
 
 .nap1 {
-    background-image: url("./img/nap1.jpg");
+    background-image: url("./img/nap1/nap1.jpg");
 }
 
 .nap2 {
-    background-image: url("./img/nap2.jpg");
+    background-image: url("./img/nap2/nap2.jpg");
 }
 
 .nap3 {
-    background-image: url("./img/nap3.jpg");
+    background-image: url("./img/nap3/nap3.jpg");
 }
 
 .footer>p {
