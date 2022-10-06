@@ -180,7 +180,8 @@
     .main>article{
         height: auto;
     }
-    #image1-1 {
+    
+    .image1-1 {
         display: block;
         padding-top: 2vh;
         margin-left: auto;
@@ -189,7 +190,7 @@
         padding-right: 0;
     }
     
-    #image1-2 {
+    .image1-2 {
         display: block;
         padding-top: 2vh;
         margin-left: auto;
